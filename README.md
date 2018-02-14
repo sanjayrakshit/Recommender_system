@@ -16,7 +16,7 @@ In this project I've built three models for recommending movies
 ## Regression Model
 In the Regression based model I've blindly made a regressor just to set a benchmark of the performace. With hyperparameter tuning. 
 
-**RMSE: 1.066698503735705
+**RMSE: 1.066698503735705 <br>
 MAE: 0.8563265025436632 **
 
 This was expected.
@@ -29,7 +29,7 @@ After this I did some feature engineering where I added 4 different features
 
 Surprisingly there was a considerable amount of decrease in the error metric
 
-**RMSE: 0.8337655216879091
-MAE: 0.6387381172964315**
+**RMSE: 0.8337655216879091 <br>
+MAE: 0.6387381172964315 **
 
 I was very happy with this result as it proves that little bit of good feature engineering goes a long way.
