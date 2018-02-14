@@ -50,7 +50,7 @@ MAE: 0.723495951243854**
 
 Even though I didn't get an improvement since my last model, I was pretty happy because this is working pretty well for a self implemented algorithm.
 
-##Simple Matrix factorization model
+## Simple Matrix factorization model
 This is the last model I had implemented. I had used a library called spotlight. In the future I want to implement Matrix factorization model completely from scratch
 
 **RMSE: 1.003307580947876**
