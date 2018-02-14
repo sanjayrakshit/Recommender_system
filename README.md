@@ -33,3 +33,28 @@ Surprisingly there was a considerable amount of decrease in the error metric
 MAE: 0.6387381172964315**
 
 I was very happy with this result as it proves that little bit of good feature engineering goes a long way.
+
+## User-User similarity model
+This another way of doing collaborative filtering recommender system. I implemented user-user similarity model directly from scratch and without using any help of machine learning libraries.
+
+Before implementing the model I've gotten rid of those users who haven't rated atleast 10 movies and also gotten rid of those movies which haven't been rated atleast 10 times. 
+
+After some cleaning I've picked a querry point and I found out users who have atleast 10 common movies with the querry user and this 10 common movies must have the querry movie in common too.
+
+After finding such users, I had to filter most-similar users from the list of users. I determined the most similar users using the euclidean distance between the querry point and the list of users. Lesser the distance, more similar are the users. 
+
+After getting the most similar users, I've declared the mean of the rating of the movie given by the most similar users as my prediction. 
+
+**RMSE: 0.9421296447411392 <br>
+MAE: 0.723495951243854**
+
+Even though I didn't get an improvement since my last model, I was pretty happy because this is working pretty well for a self implemented algorithm.
+
+##Simple Matrix factorization model
+This is the last model I had implemented. I had used a library called spotlight. In the future I want to implement Matrix factorization model completely from scratch
+
+**RMSE: 1.003307580947876**
+
+The result was not what I had expected. 
+
+The biggest takeaway from this should be, fancy models doesn't always mean better results. Sometimes the simplest models perform the best. It all depends on the data.
